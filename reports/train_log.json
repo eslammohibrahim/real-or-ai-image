@@ -1,0 +1,18 @@
+{
+  "train": 90000,
+  "val": 10000,
+  "baseline_val_acc": 0.6675,
+  "cnn_val_acc_per_epoch": [
+    0.8816,
+    0.9269,
+    0.9468,
+    0.941,
+    0.9342,
+    0.943,
+    0.9659,
+    0.9685
+  ],
+  "cnn_best_val_acc": 0.9685,
+  "train_minutes": 11.6,
+  "params": 204481
+}

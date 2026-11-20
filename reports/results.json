@@ -1,0 +1,106 @@
+{
+  "test": 20000,
+  "acc": 0.9678,
+  "f1": 0.9677,
+  "roc_auc": 0.9955,
+  "confusion": [
+    [
+      9718,
+      282
+    ],
+    [
+      362,
+      9638
+    ]
+  ],
+  "corruptions": {
+    "none (clean)": {
+      "acc": 0.9678,
+      "real_called_ai": 0.0282,
+      "ai_called_real": 0.0362
+    },
+    "JPEG quality 75": {
+      "acc": 0.9675,
+      "real_called_ai": 0.0281,
+      "ai_called_real": 0.037
+    },
+    "JPEG quality 30": {
+      "acc": 0.8864,
+      "real_called_ai": 0.0154,
+      "ai_called_real": 0.2118
+    },
+    "resize down to 24px and back": {
+      "acc": 0.5911,
+      "real_called_ai": 0.0023,
+      "ai_called_real": 0.8154
+    },
+    "slight blur": {
+      "acc": 0.6458,
+      "real_called_ai": 0.0007,
+      "ai_called_real": 0.7078
+    },
+    "brighter (+20%)": {
+      "acc": 0.95,
+      "real_called_ai": 0.0374,
+      "ai_called_real": 0.0626
+    }
+  },
+  "examples_wrong": [
+    {
+      "i": 18239,
+      "is_ai": 0,
+      "p_ai": 1.0
+    },
+    {
+      "i": 17562,
+      "is_ai": 0,
+      "p_ai": 1.0
+    },
+    {
+      "i": 6783,
+      "is_ai": 1,
+      "p_ai": 0.0
+    },
+    {
+      "i": 10755,
+      "is_ai": 0,
+      "p_ai": 0.999
+    },
+    {
+      "i": 2512,
+      "is_ai": 1,
+      "p_ai": 0.001
+    },
+    {
+      "i": 11025,
+      "is_ai": 0,
+      "p_ai": 0.999
+    },
+    {
+      "i": 19999,
+      "is_ai": 0,
+      "p_ai": 0.999
+    },
+    {
+      "i": 3171,
+      "is_ai": 1,
+      "p_ai": 0.002
+    }
+  ],
+  "train": 90000,
+  "val": 10000,
+  "baseline_val_acc": 0.6675,
+  "cnn_val_acc_per_epoch": [
+    0.8816,
+    0.9269,
+    0.9468,
+    0.941,
+    0.9342,
+    0.943,
+    0.9659,
+    0.9685
+  ],
+  "cnn_best_val_acc": 0.9685,
+  "train_minutes": 11.6,
+  "params": 204481
+}
